@@ -38,7 +38,7 @@ CITY_NAME = 'Qinhuangdao'
 
 def start(update, context):
     """发送欢迎消息"""
-    message = "Welcome to use this chatBot! \n If you want to check the weather today, use /chat and input your location \n If you want to chat, type /chat and input the words you want!"
+    message = "Welcome to use this chatBot! \n If you want to check the weather today, use /weather and input your location \n If you want to chat, type /chat and input the words you want!"
     update.message.reply_text(message)
     # 输出调试信息
     logging.debug(f"Sent a welcome message to {update.effective_chat.id}. Message content: {message}")
